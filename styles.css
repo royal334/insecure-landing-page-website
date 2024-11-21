@@ -40,9 +40,7 @@ nav a:hover{
      color: var(--VeryDarkViolet);
 }
 
-.nav{
-     background-color: var(--DarkViolet);
-}
+
 
 
 @media (max-width:768px) {
@@ -59,9 +57,12 @@ nav a:hover{
           height: auto;
           position: relative;
      } 
+
+     .nav{
+          background-color: var(--VeryDarkViolet);
+     }
+
 }
-
-
 
 .section1{
      background-color:var(--DarkViolet) ;
