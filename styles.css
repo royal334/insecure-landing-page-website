@@ -1,0 +1,90 @@
+:root{
+     --DarkViolet: #2d2640;
+     --GrayishBlue: hsl(216, 30%, 68%);
+     --DarkGrayishViolet: hsl(276, 4%, 51%);
+     --VeryDarkViolet: hsl(270, 9%, 17%);
+     --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+@font-face {
+     font-family: 'DM serif';
+     src: url(./fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf);
+}
+
+@font-face {
+     font-family: 'Karla';
+     src: url(./fonts/Karla/Karla-VariableFont_wght.ttf);
+}
+
+
+
+body{
+     font-family: 'Karla';
+
+}
+
+h1, h2, h3{
+     font-family: 'DM serif';
+}
+
+h4{
+     color: var(--DarkGrayishViolet);
+}
+
+nav a {
+     text-decoration: none;
+    display: block;
+}
+
+nav a:hover{
+     color: var(--VeryDarkViolet);
+}
+
+.nav{
+     background-color: var(--DarkViolet);
+}
+
+
+@media (max-width:768px) {
+     .nav {
+          visibility: hidden;
+          height: 0;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+     }
+     
+     .nav--visible {
+          visibility: visible;
+          height: auto;
+          position: relative;
+     } 
+}
+
+
+
+.section1{
+     background-color:var(--DarkViolet) ;
+}   
+
+.section2 p{
+     color: var(--GrayishBlue);
+}
+
+.section3 .mx-auto{
+     background-color: var(--DarkViolet);
+}
+
+.section4 {
+     background-color: var(--VeryLightGray);
+}
+
+footer p{
+     color: var(--VeryDarkViolet);
+}
+
+footer p:hover{
+     text-decoration: underline;
+     cursor: pointer;
+}
+
